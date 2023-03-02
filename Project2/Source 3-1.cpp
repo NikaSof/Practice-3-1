@@ -13,18 +13,18 @@ void eq2::set(double a1, double b1, double c1) {
 }
 double eq2::find_X() {
     if (D < 0) {
-        std::cout << "Корней нет" << "\n";
+        std::cout << "РљРѕСЂРЅРµР№ РЅРµС‚" << "\n";
         return 0;
     }
     else {
         if (D == 0) {
-            std::cout << "Корень один: " << "\n";
+            std::cout << "РљРѕСЂРµРЅСЊ РѕРґРёРЅ: " << "\n";
             double x = (-b - sqrt(D)) / (2 * a);
             std::cout <<"X = " << x << "\n";
             return x;
         }
         else {
-            std::cout << "Корней 2, наибольший: " << "\n";
+            std::cout << "РљРѕСЂРЅРµР№ 2, РЅР°РёР±РѕР»СЊС€РёР№: " << "\n";
             double x1 = (-b - sqrt(D)) / (2 * a);
             double x2 = (-b + sqrt(D)) / (2 * a);
             if (x1 > x2) {
